@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/story_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.submission.dicodingstory.dashboard.DashboardFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.submission.dicodingstory.todetail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="story"
+            app:argType="com.submission.dicodingstory.model.Story" />
+    </fragment>
+    <fragment
+        android:id="@+id/newStoryFragment"
+        android:name="com.submission.dicodingstory.dashboard.NewStoryFragment"
+        android:label="fragment_story_new"
+        tools:layout="@layout/fragment_new_story" />
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.submission.dicodingstory.dashboard.OptionFragment"
+        android:label="fragment_option"
+        tools:layout="@layout/fragment_option" />
+    <fragment
+        android:id="@+id/googleMapsFragment"
+        android:name="com.submission.dicodingstory.googlemaps.GoogleMapsFragment"
+        android:label="@string/google_map"
+        tools:layout="@layout/fragment_google_maps"/>
+
+  
+</navigation>

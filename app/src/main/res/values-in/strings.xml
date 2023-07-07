@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dicoding Story</string>
+    <string name="img_desc">Deskripsi Gambar</string>
+    <string name="dicoding_story">Dicoding Story</string>
+    <string name="back">Kembali</string>
+    <string name="camera">Kamera</string>
+    <string name="galery">Galeri</string>
+    <string name="description">Deskripsi</string>
+    <string name="upload">Unggah</string>
+    <string name="signOut">Keluar</string>
+    <string name="signIn_small">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="already_have_an_account">Sudah punya akun?</string>
+    <string name="sign_up">Daftar</string>
+    <string name="don_at_have_account">Tidak punya akun?</string>
+    <string name="name">Nama</string>
+    <string name="dashboard">Dasbor</string>
+    <string name="option">Pengaturan</string>
+    <string name="new_story">Cerita Baru</string>
+    <string name="password_error">Kata sandi harus lebih dari 7 karakter</string>
+    <string name="required">Wajib</string>
+    <string name="img">Gambar</string>
+    <string name="your_email">email anda</string>
+    <string name="your_password">kata sandi anda</string>
+    <string name="wrong_email">email salah</string>
+
+
+    <string name="blank_fragment">Kosong</string>
+    <string name="share_location">Bagikan Lokasi</string>
+    <string name="cant_empty">Tidak Boleh Kosong</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="no_data">Tidak Ada Data</string>
+    <string name="google_map_icon">Ikon Google Map</string>
+    <string name="google_map">Peta Google</string>
+</resources>

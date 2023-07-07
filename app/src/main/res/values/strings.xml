@@ -1,0 +1,44 @@
+<resources>
+
+
+    <string name="app_name">Dicoding Story</string>
+    <string name="img_desc">Image Description</string>
+    <string name="dicoding_story">Dicoding Story</string>
+    <string name="back">Back</string>
+    <string name="camera">CAMERA</string>
+    <string name="galery">Galery</string>
+    <string name="description">Description</string>
+    <string name="upload">Upload</string>
+    <string name="signOut">Sign out</string>
+    <string name="signIn_small">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_at_have_account">Don\'t have an account?</string>
+    <string name="name">Name</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="option">Option</string>
+    <string name="new_story">New Story</string>
+    <string name="password_error">Password must be more than 7 characters</string>
+    <string name="required">Required</string>
+    <string name="img">image</string>
+    <string name="your_email">your email</string>
+    <string name="your_password">your password</string>
+    <string name="wrong_email">wrong email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+
+
+
+    <string name="blank_fragment">Blank</string>
+    <string name="share_location">Share Location</string>
+    <string name="cant_empty">Can\'t Empty</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_data">No Data</string>
+    <string name="google_map_icon">Icon Google Map</string>
+    <string name="google_map">Google Map</string>
+
+
+</resources>

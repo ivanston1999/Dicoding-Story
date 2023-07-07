@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/dashboardFragment"
+        android:icon="@drawable/dashboard_icon"
+        android:title="@string/dashboard"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/newStoryFragment"
+        android:icon="@drawable/cap_icon"
+        android:title="@string/new_story"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/googleMapsFragment"
+        android:icon="@drawable/google_maps_icon"
+        android:title="@string/google_map"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/optionFragment"
+        android:icon="@drawable/option_icon"
+        android:title="@string/option"
+        app:showAsAction="ifRoom"/>
+
+</menu>

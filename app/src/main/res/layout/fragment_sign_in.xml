@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.SignInFragment">
+
+    <ImageView
+        android:id="@+id/ivDicoding"
+        android:layout_width="161dp"
+        android:layout_height="161dp"
+        android:src="@drawable/dicoding_story"
+        android:alpha="0"
+        android:layout_marginTop="111dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/img_desc"/>
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signIn_small"
+        android:textColor="@color/color_main"
+        android:textSize="33sp"
+        android:alpha="0"
+        android:layout_marginTop="53dp"
+        android:layout_marginHorizontal="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDicoding" />
+
+    <LinearLayout
+        android:id="@+id/llEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="31dp"
+        android:background="@drawable/box_line"
+        android:layout_marginTop="17dp"
+        android:alpha="0"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignIn">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginVertical="11dp"
+            android:src="@drawable/email_icon"
+            app:tint="@color/color_main"
+            android:contentDescription="@string/img_desc"/>
+
+        <com.submission.dicodingstory.customview.ETemail
+            android:id="@+id/ed_login_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/email"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/main_text"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="13dp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="31dp"
+        android:layout_marginTop="15dp"
+        android:alpha="0"
+        android:background="@drawable/box_line"
+        app:layout_constraintEnd_toEndOf="@+id/llEmail"
+        app:layout_constraintStart_toStartOf="@+id/llEmail"
+        app:layout_constraintTop_toBottomOf="@+id/llEmail">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginVertical="11dp"
+            android:contentDescription="@string/img_desc"
+            android:src="@drawable/password_icon"
+            app:tint="@color/purple_500" />
+
+        <com.submission.dicodingstory.customview.ETpassword
+            android:id="@+id/ed_login_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/purple_500"
+            android:layout_gravity="center"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/llPassword"
+        app:layout_constraintTop_toBottomOf="@+id/llPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_at_have_account"
+            android:textColor="@color/main_text"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/color_main"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pink_button"
+        android:gravity="center"
+        android:paddingHorizontal="100dp"
+        android:text="@string/signIn_small"
+        android:alpha="0"
+        android:enabled="false"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llSignUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
